@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+<body style="margin: 0; font-family: 'Arial', sans-serif; overflow-x: hidden;">
+
+    <!-- Navbar -->
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; background-color: rgb(55, 81, 126, 0.9); padding: 10px; color: white; padding-right: 20px;">
+        <div class="logo" style="font-size: 1.5rem; font-weight: bold;">Pneumonia Detection</div>
+        <div class="nav-buttons" style="padding-right: 30px; display: flex;">
+            <button class="nav-btn" style="margin-left: 10px; padding: 8px 15px; border: none; border-radius: 20px; background-color: #47b2e4; color: white; cursor: pointer; transition: background-color 0.3s;">Home</button>
+            <button class="nav-btn" style="margin-left: 10px; padding: 8px 15px; border: none; border-radius: 20px; background-color: #47b2e4; color: white; cursor: pointer; transition: background-color 0.3s;">About</button>
+            <button class="nav-btn" style="margin-left: 10px; padding: 8px 15px; border: none; border-radius: 20px; background-color: #47b2e4; color: white; cursor: pointer; transition: background-color 0.3s;">Research</button>
+            <button class="nav-btn" style="margin-left: 10px; padding: 8px 15px; border: none; border-radius: 20px; background-color: #47b2e4; color: white; cursor: pointer; transition: background-color 0.3s;">Team</button>
+            <button class="nav-btn" style="margin-left: 10px; padding: 8px 15px; border: none; border-radius: 20px; background-color: #47b2e4; color: white; cursor: pointer; transition: background-color 0.3s;">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <div class="section1" style="height: 90vh;">
+        <div class="aim" style="display: flex; background-color: rgba(255, 255, 255, 0.6); color: #37517e; background-size: cover; background-position: center; position: relative;">
+            <div class="aim-content" style="text-align: justify; flex: 1; margin-right: 20px;">
+                <h1 style="padding-top: 100px; padding-left: 20px; font-size: 40px; color: #37517e;">Welcome to Pneumonia Detection</h1>
+                <p style="justify-content: space-between; color: #37517e; padding-left: 20px; font-size: 20px;">Embarking on a mission to transform healthcare accessibility, our AI-powered Pneumonia Detection initiative empowers remote communities and supports medical professionals. Harnessing cutting-edge technology, we strive to bridge the healthcare gap, ensuring swift and accurate diagnoses. Join us in revolutionizing healthcare, one X-ray at a time.</p>
+                <p style="justify-content: space-between; color: #37517e; padding-left: 20px; font-size: 20px;">स्वास्थ्य सुलभता को बदलने के लिए एक मिशन पर कदम बढ़ाते हुए, हमारी AI-संचालित प्न्यूमोनिया पहचान पहल दूरस्थ समुदायों को शक्ति प्रदान करती है और चिकित्सा पेशेवरों का समर्थन करती है। कटिंग-एज तकनीक का सहारा लेकर, हम स्वास्थ्य से संबंधित अंतर को भरने का प्रयास कर रहे हैं, ताकि त्वरित और सटीक निदान संभव हो। हमारे साथ जुड़ें और स्वास्थ्य को क्रांतिकारी बनाने में एक एक्स-रे के समय।</p>
+            </div>
+            <img src="https://i.ibb.co/D1Npf5v/bg.webp" alt="Square Image" class="round-image" style="padding-bottom: 0; width: 627px; height:627px">
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section2" style="height: 80vh;background-color: rgb(55, 81, 126);">
+        <div class="content" style="padding: 20px; color: azure; width: 100%;">
+            <h1 style="font-size: 50px; color: rgb(231, 238, 255);">Upload The Image</h1>
+            <p class="text" style="line-height: 1.6; color: rgba(231, 238, 255);">Begin by selecting the file using the 'Choose File' button, and then proceed to upload the X-ray image in .jpg or .png format by clicking the 'Upload Image' button for our AI-powered Pneumonia Detection initiative.</p>
+            <p class="text" style="line-height: 1.6; color: rgba(231, 238, 255);">'Choose File' बटन का उपयोग करके फ़ाइल का चयन करके शुरुआत करें, और फिर हमारी AI निमोनिया जांच पहल के लिए 'Upload Image' बटन पर क्लिक करके एक्स-रे छवि को .jpg या .png प्रारूप में अपलोड करने के लिए आगे बढ़ें।</p>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <div class="file-input-container" style="position: relative; display: inline-block;">
+                    <label for="fileInput" class="file-label" style="display: inline-block; padding: 10px 20px; background-color: #47b2e4; color: white; border-radius: 30px; cursor: pointer;">Choose File</label>
+                    <input type="file" id="fileInput" name="file" class="file-input" accept="image/jpeg, image/png, image/dicom" style="position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; overflow: hidden;">
+                </div>
+                <br><br>
+                <button type="submit" class="upload-btn" value="submit" style="border: none; border-radius: 20px; background-color: #47b2e4; color: white; padding: 10px 20px;width:150px; cursor: pointer; transition: background-color 0.3s;">Upload Image</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add inline styles for other sections -->
+    <!-- Section 3 -->
+<div class="section3" style="height: 100vh; background-color: rgba(127, 137, 161, 0.25);">
+    <div class="research" style="color: #37517e; padding-top: 20px; max-width: 800px; padding-left: 20px;">
+        <h1 style="padding-top: 30px; color: #37517e; font-size: 40px;">Research Paper Abstract</h1>
+        <p style="color: #37517e; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida ex nec dui fringilla, vel tincidunt nunc bibendum...</p>
+        <h1 style="color: #37517e; font-size: 40px;">Conclusion</h1>
+        <p style="color: #37517e; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida ex nec dui fringilla, vel tincidunt nunc bibendum...</p>
+    </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section4" style="height: 100vh; padding: 10px; background-color: #37517e;">
+    <h1 style="color: rgb(231, 238, 255); text-align: center; align-self: center; font-size: 40px; margin-top: 30px;">Our Team</h1>
+    <div class="team-row" style="display: flex; justify-content: space-around;">
+        <div class="team-card" style="box-shadow: 0 0 10px rgb(174, 170, 240); overflow-x: hidden; width: 400px; height: 400px; background-color: rgb(231, 238, 255);; padding: 15px; text-align: center; border-radius: 25px; margin: 15px; transition: transform 0.3s ease-in-out;">
+            <img src="https://avatars.githubusercontent.com/u/120238040?v=4?s=400" alt="Apurv Chudasama" class="team-img" style="border-radius: 50%; width: 180px; height: 180px; margin-bottom: 10px;">
+            <div class="card-content" style="font-size: 14px;">
+                <h2 style="font-size: 18px;">Apurv Chudasama</h2>
+                <p style="font-size: 16px;">Student At CHARUSAT</p>
+                <p style="font-size: 16px;">Department of Computer Science & Engg.</p>
+                <div class="social-icons" style="margin-top: 10px;">
+                   <a href="https://www.linkedin.com/in/apurv-chudasama-744b05258/?originalSubdomain=in" target="_blank" style="display: inline-block; margin-right: 5px; width: 25px; height: 25px;">
+                        <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" alt="LinkedIn" style="width: 100%; height: 100%;">
+                    </a>
+                    <a href="https://github.com/Apurv090405" target="_blank" style="display: inline-block; margin-right: 5px; width: 25px; height: 25px;">
+                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Github" style="width: 100%; height: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the above card structure for each team member -->
+    </div>
+</div>
+
+<!-- Section 5 -->
+<div class="section5" style="height: 80vh; display: flex; align-items: center; justify-content: end; background-color: rgb(231, 238, 255); padding: 20px;">
+    <img src="https://i.ibb.co/D1Npf5v/bg.webp" alt="Image" class="img" style="overflow-x:hidden; overflow-y:hidden; border-radius: 15px; height: 450px; width: 500px; padding-right: 200px;">
+    <div class="spacee1" style="width: 150px;"></div>
+    <div class="contact-form" style="padding-right: 20px; color: rgb(231, 238, 255); background-color: #37517e; max-width: 500px; width: 100%; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgb(41, 38, 99);">
+        <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+        <form style="display: grid; gap: 15px;">
+            <label style="font-weight: bold;">Name:</label>
+            <input type="text" name="name" style="background-color: rgb(231, 238, 255); width: 95%; padding: 10px; border: 1px solid #000000; border-radius: 5px;">
+
+            <label style="font-weight: bold;">Email:</label>
+            <input type="email" name="email" style="background-color: rgb(231, 238, 255); width: 95%; padding: 10px; border: 1px solid #000000; border-radius: 5px;">
+
+            <label style="font-weight: bold;">Message:</label>
+            <textarea name="message" style="background-color: rgb(231, 238, 255); width: 95%; padding: 10px; border: 1px solid #000000; border-radius: 5px;"></textarea>
+
+            <button type="submit" style="background-color: #47b2e4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
